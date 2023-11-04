@@ -1,11 +1,11 @@
 /* Import Google Fonts (Add this at the top of your theme.css file) */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 /* App Background and Text Styles */
 body, html {
-    font-family: 'Roboto', sans-serif;
-   background: linear-gradient(to right, #E5E8E8, #34495E);
-    color: #333; 
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right, #1a1a1a, #333333);
+    color: #f5f5f5;
     padding: 2em;
     line-height: 1.6;
     overflow: auto;
@@ -14,61 +14,61 @@ body, html {
     width: 100%;
     height: 100%;
 }
+
 /* All "Anchor" elements (HTML Links) */
 .li-style{
-  font-family: 'Roboto', sans-serif;
-  color: #000000; /* New Text Color */
-  transition: color 0.3s; /* Smooth color transition on hover */
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f5f5; /* New Text Color */
+    transition: color 0.3s; /* Smooth color transition on hover */
 }
 
 /* Adjust the background color or gradient for .bg-light */
 .bg-light {
-  background: linear-gradient(to bottom, #E5E8E8, #34495E); 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    background: linear-gradient(to bottom, #1a1a1a, #333333);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Customize the Navigation "Brand" */
 .navbar-light .navbar-brand {
-  font-family: 'Roboto', sans-serif; 
-  color: #007BFF; 
-  text-shadow: 1px 1px 2px #fff; 
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 /* Style the Navigation Links */
 .collapse.navbar-collapse .navbar-nav .nav-item .nav-link {
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
-  transition: color 0.3s;
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f5f5;
+    transition: color 0.3s;
 }
 
 .collapse.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  color: #0056B3;
+    color: #f5f5f5;
 }
-
 
 /* Highlight the font and add a gradient background to the selected navigation item */
 .navbar .nav-item a.active {
-  background: linear-gradient(to right, #808d8e, #343a40);
-  color: #111212; 
+    background: linear-gradient(to right, #333333, #1a1a1a);
+    color: #f5f5f5;
 }
 
 /* Button Style */
 .btn-primary {
-  background: linear-gradient(to bottom, #007BFF, #0056b3); /* Gradient Background */
-  color: #fff; /* Text Color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box Shadow (outline) */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: background 0.3s, box-shadow 0.3s, color 0.3s; /* Smooth transition on hover */
+    background: linear-gradient(to bottom, #1a1a1a, #333333); /* Gradient Background */
+    color: #f5f5f5; /* Text Color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box Shadow (outline) */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s, box-shadow 0.3s, color 0.3s; /* Smooth transition on hover */
 }
 
 /* Hover State */
 .btn-primary:hover {
-  background: #0056b3; /* Solid Background Color on hover */
-  color: #fff; /* Text Color */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted Box Shadow on hover (inset) */
-  cursor: pointer;
+    background: #000000; /* Solid Background Color on hover */
+    color: #f5f5f5; /* Text Color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted Box Shadow on hover (inset) */
+    cursor: pointer;
 }
 
 /* Tables */
@@ -76,64 +76,65 @@ body, html {
   border-collapse: collapse;
   width: 100%;
   margin-top: 1em;
-  border: 0px solid black; /* Define the border */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow added */
+  border: 1px solid #666666; /* Define the border */
+  box-shadow: 5px 5px 10px #666666; /* Elegant box shadow added */
 }
 
 .custom-table caption {
-  font-family: 'Roboto', sans-serif; /* Adjust font-family as needed */
-  color: #333;
+  font-family: 'Open Sans', sans-serif; /* Adjust font-family as needed */
+  color: #f5f5f5;
   padding: 0.5em;
+  background-color: #1a1a1a; /* Dark gray background color for the caption */
 }
 
 .custom-table th, .custom-table td {
-  padding: 0.5em;
+  padding: 0.8em;
+  text-align: left; /* Align the text to the left */
+  color: #f5f5f5; /* Table Text Color */
 }
 
-.custom-table tr:nth-child(odd) td {
-  background: #E6E6E6;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow added to odd-numbered rows */
-  background-color: #F5F5F5; /* Solid Background Color for odd-numbered table rows */
+.custom-table tr:nth-child(odd) {
+  background-color: #1a1a1a; /* Dark gray background color for odd-numbered table rows */
 }
+
+.custom-table tr:hover {
+  background-color: #333333; /* Even darker gray background color when hovering */
+}
+
 
 /* Headings */
-h1, h2, h3, h4, h5, h6  {
-  font-family: 'Roboto', sans-serif; /* Adjust font-family as needed */
-  color: #007BFF; /* New text color for headings */
-  text-shadow: 1px 1px 2px #fff; /* Text shadow for headings */
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Open Sans', sans-serif; /* Adjust font-family as needed */
+    color: #f5f5f5; /* New text color for headings */
+    text-shadow: 1px 1px 2px black; /* Text shadow for headings */
 }
 
 /* Apply a subtle box shadow to all elements */
 .shadow-class {
-  box-shadow: 5px 5px 10px #1f2226;
+    box-shadow: 5px 5px 10px #1f2226;
 }
 
 /* Legend Style */
-legend {
-  padding: 10px 0; /* Padding Top / Bottom */
-  font-family: 'Roboto', sans-serif; /* Import the Google Font as needed */
-  color: #007BFF; /* New Text Color */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text Shadow */
+legend, label {
+    padding: 10px 0; /* Padding Top / Bottom */
+    font-family: 'Open Sans', sans-serif; /* Import the Google Font as needed */
+    color:#f5f5f5; /* New Text Color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text Shadow */
 }
 
 /* Lists */
 ol, ul {
     padding-left: 2em;
+    color: #f5f5f5; /* New text color for headings */
 }
 
 /* Images */
 img {
     margin: 1em;
-    border: 1px solid #007BFF; /* Add border for images */
+    border: 1px solid #f5f5f5; /* Add border for images */
 }
 
 /* Audio and Video */
 audio, video {
     margin: 1em;
 }
-
-
-
-
-
-
