@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <h2>Edit Course</h2>
+        <hr />
+        <form method="post" action="/course/update">
+            <!-- Hidden field for courseId so it is not shown in UI but available in the reqquest object -->
+            <input type="hidden" name="courseId" value="{{course.courseId}}" />
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <label for="courseCode" class="form-label">Course Code</label>
+                        <!-- Removed readonly attribute from the last version-->
+                        <input class="form-control" id="courseCode" name="courseCode" type="text" value="{{course.courseCode}}">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="mb-3">
+                        <label for="courseDescription" class="form-label">Course Description</label>
+                        <!-- Removed readonly attribute from last version -->
+                        <input class="form-control" id="courseDescription" name="courseDescription" type="text" value="{{course.courseDescription}}">
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+
+            <input type="submit" class="btn btn-primary float-end" value="Update Course" /><br><br><br>
+        </form>
+    </div>
+</div>
