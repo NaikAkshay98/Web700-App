@@ -1,14 +1,11 @@
 // sequelize required to point to our postgres database
 const Sequelize = require('sequelize');
-/* 
-Below variables will be set with the required values only in the local version.
-This is commented for git checking and cyclic deployment as these variables are already set in cyclic environment variables.
-process.env.PGHOST = '';
-process.env.PGDATABASE = '';
-process.env.PGUSER = '';
-process.env.PGPASSWORD = '';
-process.env.ENDPOINT_ID = '';
-*/
+
+process.env.PGHOST = 'ep-yellow-forest-53215226-pooler.us-east-2.aws.neon.tech';
+process.env.PGDATABASE = 'SenecaDB';
+process.env.PGUSER = 'NaikAkshay98';
+process.env.PGPASSWORD = 'ifFD5GqH4gds'; 
+process.env.ENDPOINT_ID = 'ep-yellow-forest-53215226-pooler';
 
 
 // set up sequelize to point to our postgres database

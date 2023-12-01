@@ -6,9 +6,9 @@
 *
 * https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
 *
-* Name: Akshayarekha Subhramaniyan Student ID: 166557223 Date: 11-25-2023
+* Name:  Student ID:  Date: 
 *
-* Online (Cyclic) Link: https://combative-dove-fatigues.cyclic.app/
+* Online (Cyclic) Link: 
 * 
 *
 ********************************************************************************/
@@ -42,7 +42,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-
+    
 // set handlebars engine with express and set ,hbs file extension for handlebars helpers, file & default main layout
 app.set('view engine', '.hbs');
 const hbs = exphbs.create({
